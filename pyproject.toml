@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "qafelh backend"
+version = "0.1.0"
+description = "This system is for every backend services for qafelh store and other"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.12"
+uvicorn = "^0.34.1"
+loadenv = "^0.1.1"
+dotenv = "^0.9.9"
+strawberry-graphql = {extras = ["fastapi"], version = "^0.264.0"}
+alembic = "^1.15.2"
+sqlmodel = "^0.0.24"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
